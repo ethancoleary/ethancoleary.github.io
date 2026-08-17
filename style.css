@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Quicksand', sans-serif;
   color: var(--text-color);
   line-height: 1.65;
   background: #ffffff;
@@ -36,7 +36,7 @@ header.site-header {
 nav.site-nav {
   display: flex;
   gap: 28px;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.95rem;
 }
 
@@ -136,7 +136,7 @@ a {
 }
 
 .paper-meta {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.9rem;
   color: var(--muted-color);
   margin: 4px 0 8px 0;
@@ -157,7 +157,7 @@ a {
 
 .toggle-link {
   cursor: pointer;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.9rem;
   text-decoration: underline;
 }
@@ -176,7 +176,7 @@ footer.site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 20px 20px 60px 20px;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.85rem;
   color: var(--muted-color);
   border-top: 1px solid var(--border-color);
