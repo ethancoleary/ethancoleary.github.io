@@ -2,6 +2,7 @@
   --text-color: #202124;
   --muted-color: #5f6368;
   --link-color: #1a0dab;
+  --navy: #1a2b4c;
   --border-color: #e0e0e0;
   --max-width: 800px;
 }
@@ -28,8 +29,9 @@ header.site-header {
 }
 
 .site-header h1 {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--navy);
   margin: 0 0 14px 0;
 }
 
@@ -52,8 +54,8 @@ nav.site-nav a:hover {
 }
 
 nav.site-nav a.active {
-  color: var(--text-color);
-  border-bottom-color: var(--text-color);
+  color: var(--navy);
+  border-bottom-color: var(--navy);
   font-weight: 600;
 }
 
@@ -64,18 +66,19 @@ main {
 }
 
 main h2 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--navy);
   margin-top: 40px;
   margin-bottom: 10px;
-  font-weight: 600;
 }
 
 main h3 {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
   margin-top: 26px;
   margin-bottom: 8px;
-  font-weight: 600;
-  color: var(--muted-color);
 }
 
 main p {
@@ -133,6 +136,7 @@ a {
 
 .paper-title {
   font-weight: 600;
+  color: var(--navy);
 }
 
 .paper-meta {
