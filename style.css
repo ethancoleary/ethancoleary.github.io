@@ -1,0 +1,142 @@
+:root {
+  --text-color: #202124;
+  --muted-color: #5f6368;
+  --link-color: #1a0dab;
+  --border-color: #e0e0e0;
+  --max-width: 800px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--text-color);
+  line-height: 1.65;
+  background: #ffffff;
+  font-size: 17px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 24px 20px 0 20px;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.site-header h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0 0 14px 0;
+}
+
+nav.site-nav {
+  display: flex;
+  gap: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+nav.site-nav a {
+  text-decoration: none;
+  color: var(--muted-color);
+  padding-bottom: 12px;
+  border-bottom: 3px solid transparent;
+}
+
+nav.site-nav a:hover {
+  color: var(--text-color);
+}
+
+nav.site-nav a.active {
+  color: var(--text-color);
+  border-bottom-color: var(--text-color);
+  font-weight: 600;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 20px 80px 20px;
+}
+
+main h2 {
+  font-size: 1.3rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+main h3 {
+  font-size: 1.05rem;
+  margin-top: 26px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--muted-color);
+}
+
+main p {
+  margin: 0 0 16px 0;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.paper-block {
+  margin-bottom: 8px;
+}
+
+.paper-title {
+  font-weight: 600;
+}
+
+.paper-meta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  margin: 4px 0 8px 0;
+}
+
+.abstract {
+  display: none;
+  border-left: 3px solid var(--border-color);
+  padding-left: 14px;
+  margin: 8px 0 18px 0;
+  color: var(--muted-color);
+  font-size: 0.97rem;
+}
+
+.abstract.open {
+  display: block;
+}
+
+.toggle-link {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+ol.talks-list, ul.talks-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 20px 0;
+}
+
+ol.talks-list li, ul.talks-list li {
+  margin-bottom: 8px;
+}
+
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 20px 60px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted-color);
+  border-top: 1px solid var(--border-color);
+}
