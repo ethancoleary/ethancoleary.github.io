@@ -16,7 +16,7 @@ body {
   color: var(--text-color);
   line-height: 1.65;
   background: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 header.site-header {
@@ -124,16 +124,16 @@ hr {
   margin: 0 0 16px 0;
 }
 
-/* Job Market Paper layout: text 2/3, image 1/3 */
+/* Job Market Paper layout: 50/50 columns, image vertically centered */
 .jmp-block {
   display: flex;
   gap: 28px;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 20px;
 }
 
 .jmp-text {
-  flex: 2 1 0;
+  flex: 1 1 50%;
   min-width: 0;
 }
 
@@ -142,8 +142,11 @@ hr {
 }
 
 .jmp-image {
-  flex: 1 1 0;
+  flex: 1 1 50%;
   min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .jmp-image img {
@@ -165,9 +168,13 @@ hr {
   .intro-photo img {
     width: 160px;
   }
+  .jmp-text,
+  .jmp-image {
+    flex: 1 1 auto;
+    width: 100%;
+  }
   .jmp-image {
     margin-top: 20px;
-    width: 100%;
   }
 }
 
