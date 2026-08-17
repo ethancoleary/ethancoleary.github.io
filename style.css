@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--text-color);
   line-height: 1.65;
   background: #ffffff;
@@ -39,7 +39,7 @@ header.site-header {
 nav.site-nav {
   display: flex;
   gap: 28px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
 }
 
@@ -90,6 +90,12 @@ a {
   color: var(--link-color);
 }
 
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 32px 0;
+}
+
 /* Intro bio layout: photo left, text right */
 .intro-block {
   display: flex;
@@ -118,8 +124,38 @@ a {
   margin: 0 0 16px 0;
 }
 
-@media (max-width: 600px) {
-  .intro-block {
+/* Job Market Paper layout: text 2/3, image 1/3 */
+.jmp-block {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.jmp-text {
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.jmp-text h2 {
+  margin-top: 0;
+}
+
+.jmp-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.jmp-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .intro-block,
+  .jmp-block {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -128,6 +164,10 @@ a {
   }
   .intro-photo img {
     width: 160px;
+  }
+  .jmp-image {
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -141,7 +181,7 @@ a {
 }
 
 .paper-meta {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   color: var(--muted-color);
   margin: 4px 0 8px 0;
@@ -162,7 +202,7 @@ a {
 
 .toggle-link {
   cursor: pointer;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   text-decoration: underline;
 }
@@ -181,7 +221,7 @@ footer.site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 20px 20px 60px 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
   color: var(--muted-color);
   border-top: 1px solid var(--border-color);
