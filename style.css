@@ -147,7 +147,7 @@ hr {
 
 .jmp-text h2 {
   margin-top: 0;
-  color: var(--navy);
+  color: var(--name-color);
 }
 
 .jmp-image {
