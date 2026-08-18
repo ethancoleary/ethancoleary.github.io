@@ -243,6 +243,30 @@ ol.talks-list li, ul.talks-list li {
   margin-bottom: 8px;
 }
 
+/* Collapsible "Before 2026..." section */
+.collapsible-title {
+  cursor: pointer;
+  user-select: none;
+}
+
+.collapsible-title:hover {
+  opacity: 0.8;
+}
+
+.toggle-indicator {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--muted-color);
+}
+
+.collapsible-content {
+  display: none;
+}
+
+.collapsible-content.open {
+  display: block;
+}
+
 footer.site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
