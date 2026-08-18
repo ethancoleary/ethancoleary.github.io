@@ -124,7 +124,7 @@ hr {
   margin: 0 0 16px 0;
 }
 
-/* Job Market Paper layout: 50/50 columns, image vertically centered */
+/* Job Market Paper layout: 50/50 columns for title + intro paragraph only */
 .jmp-block {
   display: flex;
   gap: 28px;
@@ -154,6 +154,16 @@ hr {
   width: 100%;
   height: auto;
   border-radius: 4px;
+}
+
+/* Bullet list spans full page width below the two-column block */
+.jmp-list {
+  margin: 20px 0 0 0;
+  padding-left: 24px;
+}
+
+.jmp-list li {
+  margin-bottom: 12px;
 }
 
 @media (max-width: 700px) {
