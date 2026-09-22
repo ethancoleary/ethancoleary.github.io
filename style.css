@@ -118,7 +118,7 @@ hr {
 
 .intro-photo img {
   display: block;
-  width: 320px;
+  width: 100px;
   height: auto;
   max-width: 50%;
 }
