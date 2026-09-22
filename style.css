@@ -120,7 +120,7 @@ hr {
   display: block;
   width: 100px;
   height: auto;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .intro-text {
