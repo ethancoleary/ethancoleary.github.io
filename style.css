@@ -113,14 +113,14 @@ hr {
 }
 
 .intro-photo {
-  flex: 0 0 170px;
+  flex: 0 0 150px;
 }
 
 .intro-photo img {
   display: block;
-  width: 170px;
+  width: 150px;
   height: auto;
-  max-width: 75%;
+  max-width: 100%;
   border-radius: 4px;
 }
 
