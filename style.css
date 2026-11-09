@@ -276,38 +276,51 @@ footer.site-footer {
   border-top: 1px solid var(--border-color);
 }
 
-/* News: two equal columns inside the existing intro-text column */
+/* News: equal columns with minimal spacing */
 .news-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 10px;
+  gap: 4px;
   align-items: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .news-text,
 .news-image {
   min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.news-image a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .news-image img {
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 100%;
   height: auto;
-  max-height: 160px;
-  object-fit: contain;
-  margin-inline: auto;
+  max-height: none;
+  margin: 0;
+  padding: 0;
 }
 
 .news-text p {
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* On mobile, put the logo below the text */
 @media (max-width: 700px) {
   .news-block {
     grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
   }
 
   .news-image {
