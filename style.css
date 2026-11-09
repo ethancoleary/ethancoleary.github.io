@@ -276,6 +276,7 @@ footer.site-footer {
   border-top: 1px solid var(--border-color);
 }
 
+/* News layout: text left, STEAM logo right */
 .news-block {
   display: flex;
   align-items: center;
@@ -289,16 +290,15 @@ footer.site-footer {
 
 .news-image {
   flex: 0 0 auto;
-  width: 220px;
-  max-width: 45%;
+  max-width: 50%;
 }
 
-.news-image object {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  border: none;
+.news-image img {
   display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 160px;
+  height: auto;
 }
 
 /* Stack the text and logo on small screens */
@@ -309,7 +309,11 @@ footer.site-footer {
   }
 
   .news-image {
-    width: 160px;
-    max-width: 100%;
+    max-width: 50%;
+    margin-top: 8px;
+  }
+
+  .news-image img {
+    max-height: 120px;
   }
 }
